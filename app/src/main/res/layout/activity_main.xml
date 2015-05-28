@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextOne"
+        android:inputType="number"/>
+    <EditText android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextTwo"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/editTextOne"
+        android:inputType="number"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editTextOne"
+    android:text="ADD"
+    android:layout_marginTop="30dp"
+    android:id="@+id/btnAdd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="0"
+        android:gravity="center"
+        android:id="@+id/txtResult"
+        android:layout_toRightOf="@+id/editTextTwo"
+        android:layout_marginLeft="40dp" />
+</RelativeLayout>
